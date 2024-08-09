@@ -4,3 +4,6 @@
     - name: Hello Message
       debug:
         msg: "Hello LoicA! {{answer}} to {{project}}"
+    - name: Print all available facts
+        ansible.builtin.debug:
+        var: ansible_facts
