@@ -3,7 +3,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello LoicA! {{answer}} to {{project}} {{ ansible_facts['nodename'] }}"
+        msg: "Hello LoicA! {{ ansible_facts['nodename'] }}"
     - name: Print all available facts
       debug:
         var: ansible_facts
