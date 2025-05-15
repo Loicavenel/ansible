@@ -4,7 +4,8 @@
     - name: Hello Message
       debug:
 #        msg: "Hello LoicA!"
-        msg: "{{ cost_center }} {{project_id}}" 
+        msg: "Cost Center: {{ cost_center }}"
+        msg: "Project ID: {{project_id}}" 
 #    - name: Print all available facts
 #      debug:
 #        var: ansible_facts
