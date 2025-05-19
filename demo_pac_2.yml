@@ -4,8 +4,7 @@
     - name: Hello Message
       debug:
 #       msg: "Hello LoicA!"
-        msg: "number of Cpus: {{ cpu }}" 
-        msg2: "Var from prompt: {{ var1 }}"
+        msg: "number of Cpus: {{ cpu }} Var from prompt: {{ var1 }} " 
 #    - name: Print all available facts
 #      debug:
 #        var: ansible_facts
