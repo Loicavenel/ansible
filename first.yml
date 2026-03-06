@@ -5,7 +5,7 @@
       debug:
 #        msg: "Hello LoicA!"
         msg: "{{ cost_center }}" 
-#    - name: Print all available facts
-#      debug:
-#        var: ansible_facts
-#        var: vars
+    - name: Print all available facts
+      debug:
+        var: ansible_facts
+        var: vars
