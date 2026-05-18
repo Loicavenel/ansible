@@ -1,6 +1,5 @@
 - name: Install Nginx
   hosts: all
-  become: yes
 
   tasks:
     - name: Update apt package cache
