@@ -2,8 +2,9 @@
   hosts: all
 
   vars:
-    my_message: "Hello Loic"
-  
+#   my_message: "Hello Loic"
+    my_message: "{{_test | default('this is default')}}" 
+    
   tasks:
     - name: Hello Message
       debug:
