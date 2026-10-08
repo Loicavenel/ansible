@@ -12,7 +12,7 @@
         
     - name: Hello Message
       debug:
-        msg: "{{my_message}} {{update}}"
+        msg: "{{my_message}}"
 
     - name: Record deployment metadata
       ansible.builtin.set_stats:
