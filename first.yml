@@ -3,9 +3,9 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello LoicA!"
+        msg: "Hello Loic A!"
      # msg: "{{ cost_center }}" 
-    - name: Print all available facts
-      debug:
-        var: ansible_facts
-        var: vars
+#  - name: Print all available facts
+#     debug:
+#       var: ansible_facts
+#       var: vars
