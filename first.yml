@@ -9,6 +9,10 @@
     - name: Hello Message
       debug:
         msg: "{{my_message}}"
+    - name: Apply facts
+      ansible.builtin.set_fact:
+        update: "loic"
+        
      # msg: "{{ cost_center }}" 
 #  - name: Print all available facts
 #     debug:
