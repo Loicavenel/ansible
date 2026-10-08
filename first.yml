@@ -6,13 +6,20 @@
     my_message: "{{ test }}" 
     
   tasks:
-    - name: Apply facts
-      ansible.builtin.set_fact:
-        update: "loic"
+#    - name: Apply facts
+#      ansible.builtin.set_fact:
+#        update: "loic"
         
     - name: Hello Message
       debug:
         msg: "{{my_message}} {{update}}"
+
+    - name: Record deployment metadata
+      ansible.builtin.set_stats:
+        data:
+          update: loic
+        per_host: false
+        aggregate: true
       
 
         
