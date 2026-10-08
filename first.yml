@@ -6,12 +6,15 @@
     my_message: "{{ test }}" 
     
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "{{my_message}}"
     - name: Apply facts
       ansible.builtin.set_fact:
         update: "loic"
+        
+    - name: Hello Message
+      debug:
+        msg: "{{my_message}}"
+        msg: "{{update}}"
+
         
      # msg: "{{ cost_center }}" 
 #  - name: Print all available facts
