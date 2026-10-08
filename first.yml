@@ -7,7 +7,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: {{my_message}}
+        msg: "{{my_message}}"
      # msg: "{{ cost_center }}" 
 #  - name: Print all available facts
 #     debug:
