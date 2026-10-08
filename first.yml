@@ -12,8 +12,8 @@
         
     - name: Hello Message
       debug:
-        msg: "{{my_message}}"
-        msg: "{{update}}"
+        msg: "{{my_message}} {{update}}"
+      
 
         
      # msg: "{{ cost_center }}" 
