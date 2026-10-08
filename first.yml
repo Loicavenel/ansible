@@ -3,9 +3,13 @@
 
   vars:
 #   my_message: "Hello Loic"
-    my_message: "{{ test }}" 
+#   my_message: "{{ test }}" 
     
   tasks:
+    - name: Apply defaults
+      ansible.builtin.set_fact:
+        my_message: "{{ test | default('unknown') }}"
+        
     - name: Hello Message
       debug:
         msg: "{{my_message}}"
