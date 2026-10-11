@@ -3,7 +3,7 @@
 
   vars:
 #   my_message: "Hello Loic"
-    my_message: "{{ test }}" 
+    my_message: "{{ var1 }}" 
     
   tasks:
 #    - name: Apply facts
