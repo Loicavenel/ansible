@@ -3,7 +3,7 @@
 
   vars:
 #   my_message: "Hello Loic"
-    my_message: "{{ var1 }}" 
+    my_message: "{{ input }}" 
     
   tasks:
 #    - name: Apply facts
@@ -17,14 +17,7 @@
     - name: Record deployment metadata
       ansible.builtin.set_stats:
         data:
-          update: Loic
+          output: "JT output"
         per_host: false
         aggregate: true
       
-
-        
-     # msg: "{{ cost_center }}" 
-#  - name: Print all available facts
-#     debug:
-#       var: ansible_facts
-#       var: vars
