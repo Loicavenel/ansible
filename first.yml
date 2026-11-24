@@ -3,7 +3,7 @@
 
   vars:
 #   my_message: "Hello Loic"
-    my_message: "{{ input }}" 
+    my_message: "{{ inject }}" 
     
   tasks:
 #    - name: Apply facts
